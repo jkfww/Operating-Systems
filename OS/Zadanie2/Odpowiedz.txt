@@ -1,0 +1,4 @@
+Odpowiedz na pytanie w zadaniu 2:
+
+Przy n wywołaniach funkcji fork-exec powstanie dokładnie n procesów potomnych,
+ponieważ każdorazowe wywołanie programu przez exec wypisuje ID procesow i konczy akcje.

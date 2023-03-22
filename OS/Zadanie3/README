@@ -1,0 +1,42 @@
+Jakub Wykocki (Informatyka Stosowana I rok 2021/2022) 
+
+-------------------------------------------------------------------------------------
+
+Zawartosc:
+
+Katalog Zadanie3 zawiera plik 3a.c (podpunkt a), 3b.c (podpunkt b), 3c.c (podpunkt c), 
+plik ig.c (program uruchamiany przez program 3c.c), plik Makefile oraz ten plik README.
+
+-------------------------------------------------------------------------------------
+
+Obsluga:
+
+Aby uruchomic program z podpunktu a nalezy wpisac
+make 3a option=? signr=?
+i w nowym oknie terminala wpisac: 
+kill -SIG PID       // gdzie SIG to numer sygnalu jaki chcemy wyslac, PID = PID procesu
+
+Aby uruchomic program z podpunktu b nalezy wpisac
+make 3b option=? signr=?
+
+Aby uruchomic program z podpunktu c nalezy wpisac
+make 3c option=? signr=?
+
+Kazdorazowe uruchomienie programu wymaga podania 2 argumentow:
+
+1) opcji obslugi sygnalu (option=) do wyboru: ignore, default lub mysighandler
+2) numeru sygnalu ktoryc chcemy uruchomic (signr=) do wyboru: nr 1-29
+
+==== Przykladowe uruchomienie programu 3a dla sygnalu 1(SIGHUP) i obslugi mysighandler: ====
+
+make 3a option=mysighandler signr=0
+
+---------------------------------------------------------------
+
+Aby wyczyscic katalog nalezy wpisac:
+make clean
+
+---------------------------------------------------------------
+
+Aby skompresowac katalog nalezy wpisac:
+make tar

@@ -1,0 +1,43 @@
+Jakub Wykocki, Informatyka Stosowana WFAIS UJ
+______________________________________________
+
+
+Systemy Operacyjne Program 7 - Pamiec dzielona.
+
+------------------------------------------------------------------------------
+
+Opis: 
+
+In progres...
+
+------------------------------------------------------------------------------
+
+Zawartosc:
+
+cw7.c - kod programu glownego do zadania 7
+producer.c - kod programu "producenta" 
+consumer.c - kod programu "konsumenta"
+lib.h - plik naglowkowy z deklaracjami funckcji
+Makefile - plik makefile
+
+------------------------------------------------------------------------------
+
+Obsluga:
+
+*** kompilacja i wywolanie: ***
+make cw7 p=[nazwa] c=[nazwa]
+
+gdzie:
+p to nazwa programu producenta
+c to nazwa programu konsumenta
+
+np: 
+make cw7 p=producer c=consumer in=datain.txt out=dataout.txt
+
+*** czyszczenie ***
+make clean
+
+*** kompresowanie ***
+make tar
+
+------------------------------------------------------------------------------

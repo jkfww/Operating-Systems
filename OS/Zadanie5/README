@@ -1,0 +1,55 @@
+Jakub Wykocki, Informatyka Stosowana WFAIS UJ
+______________________________________________
+
+
+Systemy Operacyjne Program 5 - potoki nazwane.
+
+------------------------------------------------------------------------------
+
+Opis: 
+Program symuluje dzialanie problemu Producenta i Konsumenta.
+5a: Program glowny uruchamia programy producenta i konsumenta funkcja execlp()
+5b: Uruchamianie programow wykonuje sie z poziomu powloki komenda xterm. 
+Producent pobiera dane z pliku wejsciowego i wstawia do potoku,
+Konsument pobiera dane z potoku i umieszcza w pliku wyjsciowym.
+Po zakonczeniu programu wywolywana jest komenda diff -s porownujaca oba pliki
+(powinny byc identyczne).
+
+------------------------------------------------------------------------------
+
+Zawartosc:
+5a.c - wlasciwy kod programu do podpunktu 5a
+producent.c - kod programu producenta
+konsument.c - kod programu konsumenta
+wejscie.txt - plik tekstowy z danymi wejsciowymi
+wyjscie.txt - plik tekstowy z danymi wyjsciowymi
+Makefile - plik makefile
+
+------------------------------------------------------------------------------
+
+Obsluga:
+
+*** kompilacja i wywolanie: ***
+1) podpunkt 5a:
+make 5a p=[nazwa] k=[nazwa] fifo=[nazwa] in=[nazwa] out=w[nazwa]
+
+2) podpunkt 5b:
+make 5b p=[nazwa] k=[nazwa] fifo=[nazwa] in=[nazwa] out=w[nazwa]
+
+// gdzie
+p = program producenta (bez rozszerzenia .c)
+k = program konsumenta (bez rozszerzenia .c)
+fifo = nazwa pototku nazwanego
+in = nazwa pliku wejsciowego
+out = nazwa pliku wyjsciowego
+
+np: make 5a p=producent k=konsument fifo=potok in=wejscie.txt out=wyjscie.txt
+np: make 5b p=producent k=konsument fifo=potok in=wejscie.txt out=wyjscie.txt
+
+*** czyszczenie ***
+make clean
+
+*** kompresowanie ***
+make tar
+
+------------------------------------------------------------------------------

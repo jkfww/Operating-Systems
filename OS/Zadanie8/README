@@ -1,0 +1,41 @@
+Jakub Wykocki, Informatyka Stosowana WFAIS UJ
+______________________________________________
+06/2022
+
+Systemy Operacyjne Program 8 - Kolejki komunikatow.
+
+------------------------------------------------------------------------------
+
+Opis: 
+
+Program symuluje dzialanie problemu Serwera i Klienta.
+Klient i Serwer otwieraja swoje kolejki do przesylania komunikatow.
+Klient wysyla do Serwera zapytanie (dzialanie matematyczne), 
+ktore Serwer otrzymuje, oblicza i do kolejki Klienta wysyla rozwiazanie. 
+Calosc odbywa sie w osobnych oknach terminala otwieranych poleceniem xterm,
+zawartym w pliku Makefile.
+
+------------------------------------------------------------------------------
+
+Zawartosc:
+
+serwer.c - kod programu serwera
+client.c - kod programu klienta
+lib.c - plik z definicjami funkcji uzywanych w programach
+lib.h - plik naglowkowy z deklaracjami funkcji
+Makefile - plik makefile
+
+------------------------------------------------------------------------------
+
+Obsluga:
+
+*** kompilacja i wywolanie: ***
+make cw8
+
+*** czyszczenie ***
+make clean
+
+*** kompresowanie ***
+make tar
+
+------------------------------------------------------------------------------

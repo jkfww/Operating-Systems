@@ -1,0 +1,75 @@
+Parent process:
+PID = 63946 UID = 1000 GID = 1000 PPID = 63936 PGID = 63936
+
+
+PID = 63947 UID = 1000 GID = 1000 PPID = 63946 PGID = 63936
+
+
+PID = 63948 UID = 1000 GID = 1000 PPID = 63947 PGID = 63936
+
+
+PID = 63949 UID = 1000 GID = 1000 PPID = 63948 PGID = 63936
+
+
+PID = 63960 UID = 1000 GID = 1000 PPID = 63946 PGID = 63936
+
+
+PID = 63961 UID = 1000 GID = 1000 PPID = 63947 PGID = 63936
+
+
+PID = 63962 UID = 1000 GID = 1000 PPID = 63960 PGID = 63936
+
+
+PID = 63963 UID = 1000 GID = 1000 PPID = 63946 PGID = 63936
+
+
+
+
+
+
+
+
+								Parent process
+							PID = 63946 PPID = 63936 PGID = 63936
+									||
+						------------------------------------------------------------------------------------------
+						||					||						||
+				PID = 63947 PPID = 63946 PGID = 63936	  PID = 63960 PPID = 63946 PGID = 63936		PID = 63963 PPID = 63946 PGID = 63936
+						||					||
+		------------------------------------------		  PID = 63962  PPID = 63960 PGID = 63936
+		||					||
+PID = 63948 PPID = 63947 PGID = 63936	   PID = 63961 PPID = 63947 PGID = 63936
+		||
+PID = 63949 PPID = 63948 PGID = 63936
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pokolenie 3
+
+PID = 63963  PPID = 63946 PGID = 63936
+
