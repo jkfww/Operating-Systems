@@ -1,3 +1,0 @@
-Odpowiedź na pytanie z podpunktu 1e:
-
-n-krotne wywołanie funkcji fork da nam łącznie 2^n (Dwa do potęgi n-tej) procesów. Dzieje się tak dlatego, że fork() tworzy za każdym wywołaniem kopię procesu, czyli zawsze z jednego, dostajemy dwa procesy. Te zależność opisuje właśnie 2^n.
